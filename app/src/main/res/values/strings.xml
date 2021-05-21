@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Curso03Semana03</string>
+    <string name="cardview_title">Carlos Salinas de Gortari</string>
+    <string name="cardview_rate">4</string>
+    <string name="cardview_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut consequat orci. Maecenas sit amet justo eu tortor facilisis molestie sed quis metus.</string>
+    <string name="cardview_action_01">Añadir a favoritos</string>
+    <string name="favorite">Favoritos</string>
+    <string name="more">Más</string>
+    <string name="page_title">Mascotas</string>
+    <string name="content_description_favorite">ícono de favoritos</string>
+    <string name="content_description_more">ícono de ver más</string>
+    <string name="page_title_favorites">Favoritos</string>
+</resources>
