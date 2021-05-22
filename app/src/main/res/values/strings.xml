@@ -32,5 +32,6 @@
     <string name="error_input_empty">Este campo no puede quedar vacío</string>
     <string name="error_email_false">Inserte un correo válido</string>
     <string name="envoy">Enviado</string>
+    <string name="subject">Asunto</string>
 
 </resources>
