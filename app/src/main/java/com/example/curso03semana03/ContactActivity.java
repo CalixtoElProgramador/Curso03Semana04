@@ -123,7 +123,8 @@ public class ContactActivity extends AppCompatActivity {
             message.setFrom(new InternetAddress(Constants.getKeyEmail()));
             //Recipient email
             message.setRecipients(Message.RecipientType.TO,
-                    InternetAddress.parse(Constants.getKeyToEmail()));
+                    InternetAddress
+                            .parse(Objects.requireNonNull(inputEmail.getText()).toString().trim()));
             //Email subject
             message.setSubject(subject());
             //Email message
