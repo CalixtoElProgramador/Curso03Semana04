@@ -7,17 +7,18 @@
     tools:context=".FavoritesActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        style="@style/Widget.MaterialComponents.AppBarLayout.PrimarySurface"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:liftOnScroll="true">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/topAppBar_favorites"
-            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:elevation="@dimen/elevation_toolbar"
             app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:navigationIcon="@drawable/ic_back"
             app:title="@string/page_title_favorites" />
 
     </com.google.android.material.appbar.AppBarLayout>

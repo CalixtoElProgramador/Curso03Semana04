@@ -7,34 +7,52 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        style="@style/Widget.MaterialComponents.AppBarLayout.PrimarySurface"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/design_default_color_primary"
-        android:theme="@style/ThemeOverlay.AppCompat.Light"
         app:liftOnScroll="true">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/topAppBar_main"
-            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:elevation="@dimen/elevation_toolbar"
+            android:elevation="0dp"
             app:layout_scrollFlags="scroll|enterAlways|snap"
             app:menu="@menu/top_app_bar"
             app:navigationIcon="@drawable/ic_footprint"
             app:title="@string/page_title" />
 
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout_mainActivity"
+            style="@style/Widget.MaterialComponents.TabLayout.PrimarySurface"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_tab_layout_main"
+            app:tabMode="fixed">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/content_label_01"
+                android:text="@string/text_label_01" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/content_label_02"
+                android:text="@string/text_label_02" />
+
+        </com.google.android.material.tabs.TabLayout>
+
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_pets"
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager_mainActivity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:clipToPadding="false"
-        android:paddingTop="8dp"
-        android:paddingBottom="16dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </androidx.viewpager2.widget.ViewPager2>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

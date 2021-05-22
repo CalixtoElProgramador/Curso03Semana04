@@ -10,9 +10,15 @@
         app:showAsAction="ifRoom" />
 
     <item
-        android:id="@+id/more"
-        android:contentDescription="@string/content_description_more"
-        android:title="@string/more"
+        android:id="@+id/contact"
+        android:contentDescription="@string/content_description_contact"
+        android:title="@string/contact"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/aboutOf"
+        android:contentDescription="@string/content_description_about_of"
+        android:title="@string/about_of"
         app:showAsAction="never" />
 
 </menu>

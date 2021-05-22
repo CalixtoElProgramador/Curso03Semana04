@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="rate">#FFEA00</color>
     <color name="icons">#7d7d7d</color>
+    <color name="colorError">#FF1744</color>
+    <color name="colorTextPrimary">#DD000000</color>
 </resources>

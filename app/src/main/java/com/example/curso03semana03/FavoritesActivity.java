@@ -9,7 +9,6 @@ import android.os.Bundle;
 import com.google.android.material.appbar.MaterialToolbar;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class FavoritesActivity extends AppCompatActivity {
 
@@ -22,10 +21,10 @@ public class FavoritesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_favorites);
 
         recyclerPetsFavorites = findViewById(R.id.recycler_petsFavorites);
-        MaterialToolbar topAppBar = (MaterialToolbar) findViewById(R.id.topAppBar_favorites);
+        MaterialToolbar topAppBar = findViewById(R.id.topAppBar_favorites);
         setSupportActionBar(topAppBar);
 
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        topAppBar.setNavigationOnClickListener(view -> onBackPressed());
 
         createData();
         createAdapter();
